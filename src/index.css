@@ -4,17 +4,18 @@
   box-sizing: border-box;
 }
 
-form,
-label,
-main {
-  display: grid;
-  gap: 0.5rem;
-}
-
 #root {
-  width: 45ch;
+  width: 50ch;
   margin: 0 auto;
   padding: 1rem;
+}
+
+form,
+label,
+main,
+.sets {
+  display: grid;
+  gap: 0.5rem;
 }
 
 header {
@@ -30,9 +31,11 @@ header nav {
 
 a {
   color: teal;
+  text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a.active {
   cursor: pointer;
   text-decoration: underline;
 }
